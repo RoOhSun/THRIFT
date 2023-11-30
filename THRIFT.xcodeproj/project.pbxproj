@@ -17,11 +17,11 @@
 		99F69A7A2B01BB890028E88F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F69A782B01BB890028E88F /* Main.storyboard */; };
 		99F69A7C2B01BB8A0028E88F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F69A7B2B01BB8A0028E88F /* Assets.xcassets */; };
 		99F69A7F2B01BB8A0028E88F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F69A7D2B01BB8A0028E88F /* LaunchScreen.storyboard */; };
-		EC42D9402B16967F00FDD37D /* tshirt.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EC42D93F2B16967F00FDD37D /* tshirt.jpeg */; };
 		EC42D9462B169EF800FDD37D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42D9452B169EF800FDD37D /* Product.swift */; };
 		EC42D9482B16A69C00FDD37D /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42D9472B16A69C00FDD37D /* ProductViewController.swift */; };
-		EC42D94A2B16A73500FDD37D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42D9492B16A73500FDD37D /* CustomTableViewCell.swift */; };
 		EC42D94C2B16AC5700FDD37D /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42D94B2B16AC5700FDD37D /* CustomCollectionViewCell.swift */; };
+		EC42D94E2B16E34700FDD37D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42D94D2B16E34700FDD37D /* ProfileViewController.swift */; };
+		EC42D9502B16E35C00FDD37D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42D94F2B16E35C00FDD37D /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,11 +37,11 @@
 		99F69A7B2B01BB8A0028E88F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99F69A7E2B01BB8A0028E88F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99F69A802B01BB8A0028E88F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC42D93F2B16967F00FDD37D /* tshirt.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tshirt.jpeg; path = ../../../../../Downloads/tshirt.jpeg; sourceTree = "<group>"; };
 		EC42D9452B169EF800FDD37D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		EC42D9472B16A69C00FDD37D /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
-		EC42D9492B16A73500FDD37D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		EC42D94B2B16AC5700FDD37D /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC42D94D2B16E34700FDD37D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EC42D94F2B16E35C00FDD37D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +81,12 @@
 				99422E712B0B18D90008C6C8 /* LoginViewController.swift */,
 				99422E732B0B19390008C6C8 /* RegisterViewController.swift */,
 				99F69A782B01BB890028E88F /* Main.storyboard */,
+				EC42D94D2B16E34700FDD37D /* ProfileViewController.swift */,
+				EC42D94F2B16E35C00FDD37D /* Profile.swift */,
 				EC42D94B2B16AC5700FDD37D /* CustomCollectionViewCell.swift */,
-				EC42D9492B16A73500FDD37D /* CustomTableViewCell.swift */,
 				EC42D9472B16A69C00FDD37D /* ProductViewController.swift */,
 				EC42D9452B169EF800FDD37D /* Product.swift */,
 				99F69A7B2B01BB8A0028E88F /* Assets.xcassets */,
-				EC42D93F2B16967F00FDD37D /* tshirt.jpeg */,
 				99F69A7D2B01BB8A0028E88F /* LaunchScreen.storyboard */,
 				99F69A802B01BB8A0028E88F /* Info.plist */,
 				99C5F7782B13E2BC00DA87D2 /* LandingViewController.swift */,
@@ -153,7 +153,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				99422E762B0B1B7C0008C6C8 /* Login.storyboard in Resources */,
-				EC42D9402B16967F00FDD37D /* tshirt.jpeg in Resources */,
 				99F69A7F2B01BB8A0028E88F /* LaunchScreen.storyboard in Resources */,
 				99F69A7C2B01BB8A0028E88F /* Assets.xcassets in Resources */,
 				99F69A7A2B01BB890028E88F /* Main.storyboard in Resources */,
@@ -169,12 +168,13 @@
 			files = (
 				99422E722B0B18D90008C6C8 /* LoginViewController.swift in Sources */,
 				EC42D94C2B16AC5700FDD37D /* CustomCollectionViewCell.swift in Sources */,
+				EC42D94E2B16E34700FDD37D /* ProfileViewController.swift in Sources */,
 				99422E742B0B19390008C6C8 /* RegisterViewController.swift in Sources */,
 				EC42D9462B169EF800FDD37D /* Product.swift in Sources */,
 				99F69A772B01BB890028E88F /* ViewController.swift in Sources */,
 				99F69A732B01BB890028E88F /* AppDelegate.swift in Sources */,
 				99C5F7792B13E2BC00DA87D2 /* LandingViewController.swift in Sources */,
-				EC42D94A2B16A73500FDD37D /* CustomTableViewCell.swift in Sources */,
+				EC42D9502B16E35C00FDD37D /* Profile.swift in Sources */,
 				EC42D9482B16A69C00FDD37D /* ProductViewController.swift in Sources */,
 				99F69A752B01BB890028E88F /* SceneDelegate.swift in Sources */,
 			);

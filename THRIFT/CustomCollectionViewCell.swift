@@ -15,4 +15,11 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     
     
+    
+
+    @IBAction func addToCart(_ sender: UIButton) {
+        
+        print("Added To Cart")
+    }
+    
 }

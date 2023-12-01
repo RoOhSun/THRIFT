@@ -35,7 +35,7 @@ extension ProductViewController: UICollectionViewDelegate, UICollectionViewDataS
         
         let productToDisplay = product[indexPath.row]
         cell.productName.text = productToDisplay.name
-        cell.productPrice.text = productToDisplay.price
+        cell.productPrice.text = "$ "+productToDisplay.price
         cell.productImage.image = productToDisplay.image
         
         return cell
